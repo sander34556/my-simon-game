@@ -15,7 +15,7 @@ $(document).on("keypress",function(){
 });
 
 $(".btn").on("click",function(){
-    if(started){
+    //if(started){
         var userChosenColour  = $(this).attr("id");
         userClickedPattern.push(userChosenColour);
     
@@ -23,7 +23,7 @@ $(".btn").on("click",function(){
         animatePress(userChosenColour);
     
         checkAnswer(userClickedPattern.length-1);
-    }
+    //}
 });
 
 function checkAnswer(currentLevel){
