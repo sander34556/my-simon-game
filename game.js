@@ -13,6 +13,13 @@ $(document).on("keypress",function(){
         started = true;
     }
 });
+$("#start").on("keypress",function(){
+    if(!started){
+        $("#level-title").text("Level "+ level);
+        nextSequence();
+        started = true;
+    }
+});
 
 $(".btn").on("click",function(){
     //if(started){
